@@ -1,4 +1,6 @@
 import React from 'react';
+import Pup from '../../img/site-sketch.jpg';
+
 
 import './Hero.css';
 
@@ -15,7 +17,7 @@ export default class Hero extends React.Component {
             </h2>
           </div>
           <div className="hero-image _50">
-            <img src="./img/site-sketch.jpg" alt="Me and my pup" id="sketch" />
+            <img src={Pup} alt="Me and my pup" id="sketch" />
           </div>
         </div>
         <div className="quote">

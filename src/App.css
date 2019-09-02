@@ -1,1 +1,356 @@
+/* Rethink whole color scheme.  Look into flex-boxing each section */
 
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.hidden {
+  display: none;
+}
+
+/* General */
+
+body{
+  text-align: center;
+}
+
+/* Navigation */
+
+nav{
+  height: 35px;
+  position: fixed;
+  display: flex;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+  /* padding: 3% 0; */
+  background-color: #293241;
+  color: #FFFFFF;  
+  align-content: center;
+  justify-content: space-between;
+}
+
+.nav-drop{
+  background-color: #293241ea;
+  position: fixed;
+  top: 35px;
+  right: 0;
+  left: 0;
+  z-index: 19;
+  height: 800px;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  padding: 20px 0;
+  font-size: 24px;
+  font-family: 'graduate', cursive;
+}
+
+.nav-link {
+  font-family: 'graduate', cursive;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-shadow: 0 5px 20px rgba(165, 255, 214, .4);
+}
+
+
+.menu{
+  padding: 6px 5px;
+  display: block;
+  height: 35px;
+  align-content: center;
+}
+
+#menu-icon:hover {
+  cursor: pointer;
+}
+
+/* Hero */
+
+header {
+  min-height: 250px;
+  padding: 20px 0 20px 0;
+  /*background-color:rgba(255, 104, 107);/*#EE6C4D; */
+  background-color: rgba(52, 105, 86, .7);
+  border: 1px groove rgba(52, 105, 86,.5);
+  /* box-shadow: 0 5px 20px rgba(69, 71, 71, .7); */
+  box-shadow: 0 5px 20px rgba(69,52,105, .7); 
+  margin: 0 2%;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: 'Oleo Script', cursive;
+  margin: 0.5em 0 0 0;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin: 0 0 20px 0;
+}
+
+#sketch {
+  height: auto;
+  width: 50%;
+  border-radius: 20%;
+}
+
+.quote{
+  margin-top: 10px;
+  padding: 0 3px;
+}
+
+.quote p{
+  font-size: 16px;
+  font-family: 'Oleo Script', cursive;
+}
+/* Section General */
+section {
+  min-height: 250px;
+  margin: 5% 2%;
+  padding:2% 0 4% 0;
+  background-color: #ffffff;/* #E0FBFC; */
+  /* border: 1px groove rgba(165, 255, 214,.5);
+  box-shadow: 0 5px 20px rgba(165, 255, 214, .4); */
+  border: 1px groove rgba(52, 105, 86,.5);
+  box-shadow: 0 5px 20px rgba(52, 105, 86, .4);
+  
+}
+
+section:nth-of-type(even) {
+  /* border: 1px groove rgba(255,166,158,.5);
+  box-shadow: 0 5px 20px rgba(255, 166, 158, .4); */
+  border: 1px groove rgba(69,52,105,.5);
+  box-shadow: 0 5px 20px rgba(69,52,105, .4); 
+  color: black;
+} 
+
+.section-title {
+  margin: 8px 0;
+  font-size:24px;
+  padding: 5px 5px;
+  font-family: 'graduate', cursive;
+}
+
+/* FlexBox CSS */
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  /* max-height: 800px; */
+  align-content: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-content: space-around;
+}
+
+.center {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+/* About me section */
+
+#about-me {
+  width:94%;
+  margin-left: 3%;
+}
+
+/* Project Section */
+
+.project {
+  border-top: 1px solid rgba(255,166,158);
+  border-bottom: rgba(255,166,158) 1px solid;
+}
+
+.project-title{
+  margin: 3px 0 3px 5px;
+  justify-content: flex-start;
+  font-weight: 400;
+}
+
+.project-screenshot {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.project-button {
+  margin: 8px;
+  font-size: 10px;
+  padding: 5px 10px;
+  border: 1px solid rgba(255,166,158);
+  box-shadow: 0 0 20px rgba(255, 166, 158, .4);
+  background-color: white;
+  border-radius: 10px;
+}
+
+.project-button:hover {
+  border: 1px solid rgba(165, 255, 214);
+  box-shadow: 0 0 20px rgba(165, 255, 214, .4);
+  background-color: white;
+}
+
+.project-description {
+  margin-bottom: 8px;
+}
+
+
+button:hover {
+  cursor: pointer;
+}
+
+/* Skills Section */
+
+.logo{
+  width: 50px; 
+  height: 50px;
+  margin: 10px 20px;
+}
+
+/* Contact Section */
+
+.main-contact-logo {
+  margin:5px 8px;
+  font-size: 40px;
+}
+
+.contact-list{
+  padding: 0 0 0 0;
+}
+
+.contact-link {
+  font-family: sans-serif;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  padding: 3px 0;
+}
+
+.contact-link:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+.contact-link .git-logo:hover {
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px #ffffff00 solid;
+  box-shadow: 0 5px 20px rgba(255, 166, 158, .4);
+}
+
+.contact-link .link-logo:hover {
+  cursor: pointer;
+  border: 1px #ffffff00 solid;
+  box-shadow: 0 5px 20px rgba(255, 166, 158, .4);
+}
+
+.contact-logo{
+  padding-right: 3px;
+}
+
+footer {
+  
+  /* margin: 0 2%; */
+}
+
+._50 {
+  width: 100%;
+}
+
+@media only screen and (min-width: 800px) {
+  h1 {
+    padding: 80px 0 0 0;
+    font-size: 90px;
+    font-family: 'Oleo Script', cursive;
+    margin: 0 0 0 0;
+  }
+
+  nav{
+    height: 70px;
+    font-size: 32px;
+  }
+
+  .nav-drop {
+    top: 70px;
+  }
+
+  .hero-row {
+    margin-top: 35px;
+  }
+
+  .logo{
+    margin: 25px 35px;
+  }
+
+  #about-me {
+    width: 70ch;
+    margin: 10px 0 0 0;
+  }
+
+  .section-title {
+    margin: 16px 0;
+    font-size: 40px;
+    padding: 5px 5px;
+    font-family: 'graduate', cursive;
+  }
+
+  .subtitle {
+    font-size: 32px;
+    margin: 0 0 0 0;
+  }
+
+  ._50 {
+    justify-content: center;
+    width: 40%;
+    margin: 0 0 15px 0;
+  }
+
+  .hero-image {
+    /* display: inline-block; */
+    width: 40%;
+  }
+  
+  #sketch {
+    padding:45px 0 20px 0;
+    /* margin: 45px 0 20px 0; */
+    height: auto;
+    width: 300px;
+    border-radius: 20%;
+  }
+  
+  .quote{
+    margin-top: 10px;
+    padding: 0 3px;
+  }
+  
+  .quote p{
+    font-size: 30px;
+    font-family: 'Oleo Script', cursive;
+  }
+
+
+}
