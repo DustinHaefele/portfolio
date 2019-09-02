@@ -18,7 +18,7 @@ body{
 
 /* Navigation */
 
-nav{
+header{
   height: 35px;
   position: fixed;
   display: flex;
@@ -52,11 +52,11 @@ nav{
 .nav-list li {
   padding: 20px 0;
   font-size: 24px;
-  font-family: 'graduate', cursive;
+  font-family: 'graduate';
 }
 
 .nav-link {
-  font-family: 'graduate', cursive;
+  font-family: 'graduate';
   color: white;
   text-decoration: none;
 }
@@ -67,7 +67,7 @@ nav{
 
 
 .menu{
-  padding: 6px 5px;
+  margin: 10px 10px; 
   display: block;
   height: 35px;
   align-content: center;
@@ -79,7 +79,7 @@ nav{
 
 /* Hero */
 
-header {
+.hero {
   min-height: 250px;
   padding: 20px 0 20px 0;
   /*background-color:rgba(255, 104, 107);/*#EE6C4D; */
@@ -119,8 +119,8 @@ h1 {
 /* Section General */
 section {
   min-height: 250px;
-  margin: 5% 2%;
-  padding:2% 0 4% 0;
+  margin: 6% 2%;
+  padding: 4% 0 4% 0;
   background-color: #ffffff;/* #E0FBFC; */
   /* border: 1px groove rgba(165, 255, 214,.5);
   box-shadow: 0 5px 20px rgba(165, 255, 214, .4); */
@@ -180,6 +180,8 @@ section:nth-of-type(even) {
 }
 
 /* Project Section */
+
+
 
 .project {
   border-top: 1px solid rgba(255,166,158);
@@ -274,7 +276,7 @@ button:hover {
 
 footer {
   
-  /* margin: 0 2%; */
+
 }
 
 ._50 {
@@ -289,7 +291,7 @@ footer {
     margin: 0 0 0 0;
   }
 
-  nav{
+  header {
     height: 70px;
     font-size: 32px;
   }
@@ -312,7 +314,7 @@ footer {
   }
 
   .section-title {
-    margin: 16px 0;
+    margin: 8px 0 24px 0;
     font-size: 40px;
     padding: 5px 5px;
     font-family: 'graduate', cursive;

@@ -21,6 +21,8 @@ function App() {
           <Contact />
         </div>
       </main>
+      <footer>Built by Dustin Haefele</footer>
+
     </div>
   );
 }

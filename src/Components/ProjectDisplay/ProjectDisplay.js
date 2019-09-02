@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ETScreen from '../../img/even-teams-group.png'
 import './ProjectDisplay.css';
 
 export default class ProjectDisplay extends React.Component {
@@ -8,7 +8,7 @@ export default class ProjectDisplay extends React.Component {
   projects = [
     {
       title: 'Even-Teams',
-      img: '../img/',
+      img: ETScreen,
       liveSite: 'https://even-teams.now.sh/',
       frontendRepo: 'https://github.com/DustinHaefele/even-teams-client',
       BackendRepo: 'https://github.com/DustinHaefele/even-teams-server',
