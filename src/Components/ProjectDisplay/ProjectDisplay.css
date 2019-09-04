@@ -1,0 +1,71 @@
+.text-over{
+  background-color: rgba(0,0,0,.8);
+  color: red;
+  position: absolute;
+  width: 80%;
+  top: 75%;
+  left: 10%;
+  font-weight: bold;
+}
+
+.desktop {
+  font-size: 36px;
+
+}
+
+.mobile {
+  font-size: 20px;
+}
+
+.img-div {
+  position: relative;
+  /* width: auto;
+  height: 80vh; */
+}
+
+.project-title{
+  margin: 3px 0 3px 5px;
+  justify-content: flex-start;
+  font-weight: 400;
+}
+
+.project-icon {
+  margin-top: 35vh;
+  font-size: 10vh;
+}
+
+.project-screenshot {
+  width: auto;
+  height: 80vh;
+  object-fit: contain;
+}
+
+.button-div {
+  width: 66%;
+  margin-left: 17%
+}
+
+.project-button {
+  margin: 8px;
+  font-size: 10px;
+  padding: 5px 10px;
+  border: 1px solid rgba(255,166,158);
+  box-shadow: 0 0 20px rgba(255, 166, 158, .4);
+  background-color: white;
+  border-radius: 10px;
+}
+
+.project-button:hover {
+  border: 1px solid rgba(165, 255, 214);
+  box-shadow: 0 0 20px rgba(165, 255, 214, .4);
+  background-color: white;
+}
+
+.project-description {
+  margin-bottom: 8px;
+}
+
+
+button:hover {
+  cursor: pointer;
+}
