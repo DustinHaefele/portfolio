@@ -21,9 +21,9 @@ export default class Header extends React.Component {
     return (
       <>
         <header role="navigation" className="nav">
-          <div className="menu">Dustin Haefele</div>
+          <div className="menu"><h2 className='nav-header'>Dustin Haefele</h2></div>
           <div className="menu" id="menu-icon" onClick={() => this.toggleNav()}>
-            &#9776;
+            <h2 className='nav-header'>&#9776;</h2>
           </div>
         </header>
         {this.state.navOpen && <nav className="nav-drop nav">

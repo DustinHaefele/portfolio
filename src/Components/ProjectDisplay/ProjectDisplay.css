@@ -10,12 +10,13 @@
 
 .desktop {
   font-size: 36px;
-
 }
 
 .mobile {
   font-size: 20px;
 }
+
+
 
 .img-div {
   position: relative;
@@ -33,7 +34,7 @@
 }
 
 .project-icon {
-  margin-top: 35vh;
+  margin: 3vh 30px;
   font-size: 10vh;
 }
 
@@ -83,4 +84,27 @@ button:hover {
 
 ._80 {
   width: 80%;
+}
+
+.desk{
+  display: none;
+}
+
+.mob {
+  display: flex;
+}
+
+@media only screen and (min-width: 800px) {
+  .project-icon {
+    margin-top: 35vh;
+    font-size: 10vh;
+  }
+
+  .mob{
+    display: none;
+  }
+
+  .desk{
+    display: flex
+  }
 }

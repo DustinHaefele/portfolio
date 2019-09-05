@@ -13,11 +13,11 @@ import SRIphone from '../../img/SR-iphone.png';
 import './ProjectDisplay.css';
 
 export default class ProjectDisplay extends React.Component {
+  
   state = {
     projectId: 0,
     imgIdx: 0,
     textVisible: false,
-    isDesktop: false,
     projects: [
       {
         title: 'Even-Teams',
@@ -52,18 +52,7 @@ export default class ProjectDisplay extends React.Component {
     ]
   };
 
-updatePredicate() {
-    this.setState({ isDesktop: window.innerWidth > 1024 });
-  }
 
-componentDidMount() {
-  this.updatePredicate();
-  window.addEventListener("resize", this.updatePredicate);
-}
-
-componentWillUnmount() {
-  window.removeEventListener("resize", this.updatePredicate);
-}
 
   setProjectId(dif) {
     let newId = this.state.projectId + dif;
@@ -106,49 +95,75 @@ componentWillUnmount() {
   }
 
   projectImage() {
-    
-  }
+    return (
+    <>
+    <div className="row img desk">
+    <FontAwesomeIcon
+      icon={faChevronLeft}
+      className="project-icon"
+      onClick={() => this.setProjectId(-1)}
+    />
+    <div className="_80">
+    <div
+      className="img-div"
+      onMouseEnter={() => this.showText()}
+      onMouseLeave={() => this.hideText()}
+    >
+      <img
+        src={
+          this.state.projects[this.state.projectId].imgs[
+            this.state.imgIdx
+          ]
+        }
+        alt="project screenshot"
+        className="project-screenshot"
+        onClick={() => this.updateImg()}
+      />
+
+      {this.state.textVisible && this.state.imgIdx === 0 && (
+        <h2 className="text-over desktop">Click to see mobile view</h2>
+      )}
+      {this.state.textVisible && this.state.imgIdx === 1 && (
+        <h2 className="text-over mobile">Click to see desktop view</h2>
+      )}
+    </div>
+    </div>
+    <FontAwesomeIcon
+      icon={faChevronRight}
+      className="project-icon"
+      onClick={() => this.setProjectId(1)}
+    />
+  </div>
+  
+  <div className="row img mob">
+  <div className="img-div">
+    <img
+      src={this.state.projects[this.state.projectId].imgs[1]}
+      alt="project screenshot"
+      className="project-screenshot"
+      onClick={() => this.updateImg()}
+    />
+  </div>
+  <div className='row'>
+  <FontAwesomeIcon
+    icon={faChevronLeft}
+    className="project-icon"
+    onClick={() => this.setProjectId(-1)}
+  />
+  <FontAwesomeIcon
+    icon={faChevronRight}
+    className="project-icon"
+    onClick={() => this.setProjectId(1)}
+  />
+  </div>
+</div>
+  </>) 
+}
 
   render() {
     return (
       <div className="project">
-        <div className="row img">
-          <FontAwesomeIcon
-            icon={faChevronLeft}
-            className="project-icon"
-            onClick={() => this.setProjectId(-1)}
-          />
-          <div className="_80">
-          <div
-            className="img-div"
-            onMouseEnter={() => this.showText()}
-            onMouseLeave={() => this.hideText()}
-          >
-            <img
-              src={
-                this.state.projects[this.state.projectId].imgs[
-                  this.state.imgIdx
-                ]
-              }
-              alt="project screenshot"
-              className="project-screenshot"
-              onClick={() => this.updateImg()}
-            />
-
-            {this.state.textVisible && this.state.imgIdx === 0 && (
-              <h2 className="text-over desktop">Click to see mobile view</h2>
-            )}
-            {this.state.textVisible && this.state.imgIdx === 1 && (
-              <h2 className="text-over mobile">Click to see desktop view</h2>
-            )}
-          </div>
-          </div>
-          <FontAwesomeIcon
-            icon={faChevronRight}
-            className="project-icon"
-            onClick={() => this.setProjectId(1)}
-          />
-        </div>
+        {this.projectImage()}
         <div className="row button-div">
           <a
             href={this.state.projects[this.state.projectId].liveSite}

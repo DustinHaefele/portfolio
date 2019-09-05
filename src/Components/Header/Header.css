@@ -43,16 +43,24 @@ header{
   text-decoration: none;
 }
 
+
+
 .nav-link:hover {
   text-shadow: 0 5px 20px rgba(165, 255, 214, .4);
 }
 
 
 .menu{
-  margin: 10px 10px; 
   display: block;
-  height: 35px;
+  justify-content: center;
   align-content: center;
+}
+
+.nav-header {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 10px;
+
 }
 
 #menu-icon:hover {
@@ -60,11 +68,9 @@ header{
 }
 
 @media only screen and (min-width: 800px) {
-  h1 {
-    padding: 80px 0 0 0;
-    font-size: 90px;
-    font-family: 'Oswald', sans-serif;
-    margin: 0 0 0 0;
+  .nav-header {
+    font-size: 36px;
+    margin: 0 10px;
   }
 
   header {
@@ -75,5 +81,14 @@ header{
 
   .nav-drop {
     top: 70px;
+  }
+
+  .nav-link {
+    font-size: 40px;
+  }
+
+  .menu {
+    justify-content: center;
+    align-content: center;
   }
 }
