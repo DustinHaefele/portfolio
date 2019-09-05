@@ -1,8 +1,9 @@
-/* Rethink whole color scheme.  Look into flex-boxing each section */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald&display=swap');
+
 
 * {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   line-height: 1.5;
 }
 
@@ -16,66 +17,7 @@ body{
   text-align: center;
 }
 
-/* Navigation */
 
-header{
-  height: 35px;
-  position: fixed;
-  display: flex;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 20;
-  /* padding: 3% 0; */
-  background-color: #293241;
-  color: #FFFFFF;  
-  align-content: center;
-  justify-content: space-between;
-}
-
-.nav-drop{
-  background-color: #293241ea;
-  position: fixed;
-  top: 35px;
-  right: 0;
-  left: 0;
-  z-index: 19;
-  height: 800px;
-}
-
-.nav-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.nav-list li {
-  padding: 20px 0;
-  font-size: 24px;
-  font-family: 'graduate';
-}
-
-.nav-link {
-  font-family: 'graduate';
-  color: white;
-  text-decoration: none;
-}
-
-.nav-link:hover {
-  text-shadow: 0 5px 20px rgba(165, 255, 214, .4);
-}
-
-
-.menu{
-  margin: 10px 10px; 
-  display: block;
-  height: 35px;
-  align-content: center;
-}
-
-#menu-icon:hover {
-  cursor: pointer;
-}
 
 /* Hero */
 
@@ -92,7 +34,7 @@ header{
 
 h1 {
   font-size: 50px;
-  font-family: 'Oleo Script', cursive;
+  font-family: 'Oswald', sans-serif;
   margin: 0.5em 0 0 0;
 }
 
@@ -114,7 +56,7 @@ h1 {
 
 .quote p{
   font-size: 16px;
-  font-family: 'Oleo Script', cursive;
+  font-family: 'Oswald', sans-serif;
 }
 /* Section General */
 section {
@@ -141,7 +83,7 @@ section:nth-of-type(even) {
   margin: 8px 0;
   font-size:24px;
   padding: 5px 5px;
-  font-family: 'graduate', cursive;
+  font-family: 'Oswald', sans-serif, cursive;
 }
 
 /* FlexBox CSS */
@@ -171,18 +113,6 @@ section:nth-of-type(even) {
 .between {
   justify-content: space-between;
 }
-
-/* About me section */
-
-#about-me {
-  width:94%;
-  margin-left: 3%;
-}
-
-/* Project Section */
-
-
-
 
 /* Skills Section */
 
@@ -246,7 +176,7 @@ footer {
   h1 {
     padding: 80px 0 0 0;
     font-size: 90px;
-    font-family: 'Oleo Script', cursive;
+    font-family: 'Oswald', sans-serif;
     margin: 0 0 0 0;
   }
 
@@ -276,7 +206,7 @@ footer {
     margin: 8px 0 24px 0;
     font-size: 40px;
     padding: 5px 5px;
-    font-family: 'graduate', cursive;
+    font-family: 'Oswald', sans-serif, cursive;
   }
 
   .subtitle {
@@ -310,7 +240,7 @@ footer {
   
   .quote p{
     font-size: 30px;
-    font-family: 'Oleo Script', cursive;
+    font-family: 'Oswald', sans-serif;
   }
 
 

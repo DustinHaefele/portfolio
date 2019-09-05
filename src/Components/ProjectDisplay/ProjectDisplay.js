@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight, faChevronLeft} from '@fortawesome/free-solid-svg-icons'
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 import ETScreen from '../../img/ET-desktop.png';
 import ETIphone from '../../img/ET-iphone.png';
 import SIScreen from '../../img/SI-desktop.png';
@@ -91,19 +92,36 @@ export default class ProjectDisplay extends React.Component {
     })
   }
 
+
+  <TransitionGroup>
+          <CSSTransition
+            key={this.state.selected.id}
+            timeout={1000}
+            classNames="messageout"
+          >
+            <div style={{ marginTop: 20 }}>
+              <img className="centered-image" src={this.state.selected.url} />
+            </div>
+          </CSSTransition>
+        </TransitionGroup>
+
+
   render() {
     return (
       <div className="project">
         <div className ='row img'>
           <FontAwesomeIcon icon={faChevronLeft} className='project-icon' onClick={()=>this.setProjectId(-1)}/>
           <div className='img-div' onMouseEnter={()=>this.showText()} onMouseLeave={()=>this.hideText()}>
-            <img src ={this.state.projects[this.state.projectId].imgs[this.state.imgIdx]} alt='project screenshot' className='project-screenshot' onClick={()=> this.updateImg()}/>
+         
+          
+          <img src ={this.state.projects[this.state.projectId].imgs[this.state.imgIdx]} alt='project screenshot' className='project-screenshot' onClick={()=> this.updateImg()}/>
+
             {(this.state.textVisible && this.state.imgIdx===0) && <h2 className='text-over desktop'>Click to see mobile view</h2>}
             {(this.state.textVisible && this.state.imgIdx===1) && <h2 className='text-over mobile'>Click to see desktop view</h2>}
           </div>
           <FontAwesomeIcon icon={faChevronRight} className='project-icon' onClick={()=>this.setProjectId(1)}/>
         </div>
-        <div className="row button-div between">
+        <div className="row button-div">
           <a href={this.state.projects[this.state.projectId].liveSite} className="project-live"><button className ='project-button'>Live App</button></a>
           <a href={this.state.projects[this.state.projectId].frontendRepo} className="project-code"><button className='project-button'>See Client Code</button></a>
           <a href={this.state.projects[this.state.projectId].backendRepo} className="project-code"><button className='project-button'>See Server Code</button></a>

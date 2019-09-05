@@ -19,8 +19,10 @@
 
 .img-div {
   position: relative;
-  /* width: auto;
-  height: 80vh; */
+}
+
+.img-div:hover {
+  cursor: pointer;
 }
 
 .project-title{
@@ -34,32 +36,40 @@
   font-size: 10vh;
 }
 
+.project-icon:hover {
+  cursor: pointer;
+}
+
 .project-screenshot {
   width: auto;
-  height: 80vh;
+  height: 70vh;
   object-fit: contain;
 }
 
 .button-div {
   width: 66%;
-  margin-left: 17%
+  margin-left: 17%;
+  justify-content: center;
 }
 
 .project-button {
   margin: 8px;
-  font-size: 10px;
-  padding: 5px 10px;
-  border: 1px solid rgba(255,166,158);
-  box-shadow: 0 0 20px rgba(255, 166, 158, .4);
-  background-color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  /* border: 1px solid black; */
+  /* //box-shadow: 0 0 20px rgba(255, 166, 158, .4); */
+  background-color: rgba(173, 216, 230, .7);
   border-radius: 10px;
+
 }
 
 .project-button:hover {
-  border: 1px solid rgba(165, 255, 214);
+  background-color: rgba(173, 216, 230, .4);
+  /* border: 1px solid rgba(165, 255, 214); */
   box-shadow: 0 0 20px rgba(165, 255, 214, .4);
-  background-color: white;
-}
+
+} 
 
 .project-description {
   margin-bottom: 8px;

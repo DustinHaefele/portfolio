@@ -1,4 +1,5 @@
 import React from 'react';
+import './AboutMe.css';
 
 export default function AboutMe () {
   return(
@@ -14,7 +15,7 @@ export default function AboutMe () {
         In my first life, I graduated from the University of Nebraska with a BS in Chemical Engineering 
         and used it to make manufacturing plants more efficient for six years.  
         In my final two years of helping plants make wood floors and mayonnaise efficiently, 
-        I found my love for programming.  <br />
+        I found my love for programming.  <br /><br />
         
         I started solving some of the problems at the plant with basic PLC programming.  After that, I talked my boss into letting me 
         learn how to program our 15-foot tall material handling robot.  I wrote some new robotics programs to help the maintenance 
