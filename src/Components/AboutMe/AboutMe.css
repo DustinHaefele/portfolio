@@ -1,7 +1,15 @@
 /* About me section */
 
 #about-me {
-  width:94%;
+  width: 45ch;
   margin-left: 3%;
-  font-size: 20px;
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 1024px) {
+#about-me {
+  width: 70ch;
+  margin: 10px 0;
+  font-size: 25px;
+}
 }

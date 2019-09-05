@@ -122,57 +122,13 @@ section:nth-of-type(even) {
   margin: 10px 20px;
 }
 
-/* Contact Section */
 
-.main-contact-logo {
-  margin:5px 8px;
-  font-size: 40px;
-}
-
-.contact-list{
-  padding: 0 0 0 0;
-}
-
-.contact-link {
-  font-family: sans-serif;
-  text-decoration: none;
-  color: black;
-  font-size: 18px;
-  padding: 3px 0;
-}
-
-.contact-link:hover {
-  color: gray;
-  cursor: pointer;
-}
-
-.contact-link .git-logo:hover {
-  border-radius: 50%;
-  cursor: pointer;
-  border: 1px #ffffff00 solid;
-  box-shadow: 0 5px 20px rgba(255, 166, 158, .4);
-}
-
-.contact-link .link-logo:hover {
-  cursor: pointer;
-  border: 1px #ffffff00 solid;
-  box-shadow: 0 5px 20px rgba(255, 166, 158, .4);
-}
-
-.contact-logo{
-  padding-right: 3px;
-}
-
-footer {
-  
-
-}
 
 ._50 {
   width: 100%;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1024px) {
   h1 {
     padding: 80px 0 0 0;
     font-size: 90px;
@@ -197,10 +153,7 @@ footer {
     margin: 25px 35px;
   }
 
-  #about-me {
-    width: 70ch;
-    margin: 10px 0 0 0;
-  }
+  
 
   .section-title {
     margin: 8px 0 24px 0;

@@ -44,7 +44,7 @@
 
 .project-screenshot {
   width: auto;
-  height: 70vh;
+  height: 80vh;
   object-fit: contain;
 }
 
@@ -75,6 +75,7 @@
 
 .project-description {
   margin-bottom: 8px;
+  font-size: 20px;
 }
 
 

@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faMailBulk, faMapMarked, faPaperPlane} from '@fortawesome/free-solid-svg-icons';
 import LinkedIn from '../../img/linkdin.svg';
 import Github from '../../img/github.svg';
 import './Contact.css';
@@ -9,7 +11,10 @@ export default function Contact() {
       <div className="column">
         <ul className="contact-list">
           <li className="row center">
-            <i className="fas fa-mail-bulk main-contact-logo"></i>
+          <FontAwesomeIcon
+            icon={faMailBulk}
+            className="main-contact-logo"
+          />
             <h2 id="contact-section-title">Contact Me</h2>
           </li>
           <li className="row center">
@@ -17,13 +22,19 @@ export default function Contact() {
               href="http://www.creaturecomfortsbeer.com/"
               className="contact-link"
             >
-              <i className="fas fa-map-marked contact-logo"></i>
+              <FontAwesomeIcon
+                icon={faMapMarked}
+                className="contact-logo"
+              />
               <span>Athens, GA</span>
             </a>
           </li>
           <li className="row center">
             <a href="emailto:Dustin.Haefele@gmail.com" className="contact-link">
-              <i className="far fa-paper-plane contact-logo"></i>
+            <FontAwesomeIcon
+              icon={faPaperPlane}
+              className="contact-logo"
+            />
               <span>Dustin.Haefele@gmail.com</span>
             </a>
           </li>
