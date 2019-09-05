@@ -19,6 +19,7 @@
 
 .img-div {
   position: relative;
+  display: inline-block;
 }
 
 .img-div:hover {
@@ -78,4 +79,8 @@
 
 button:hover {
   cursor: pointer;
+}
+
+._80 {
+  width: 80%;
 }
