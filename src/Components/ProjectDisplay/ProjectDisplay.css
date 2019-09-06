@@ -54,21 +54,29 @@
 }
 
 .prod_50 {
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: nowrap; */
+  overflow: hidden;
   justify-content: center;
-  margin: 0 0 15px 0;
-  width: 60%;
+  align-items: flex-start;
+  margin: 0 0 0 0;
+  height: 50vh;
+  width: 65%;
   object-fit: contain;
 }
 
 .img-div-mobile {
   position: relative;
   width: auto;
-  height: 60vh;
+  height: 50vh;
   display: inline-block;
 }
 
 .img-div-desk{
+  padding: 2vh 0 0;
   position: relative;
+  align-items: center;
   width: 100%;
   height: auto;
   display: inline-block;
@@ -84,8 +92,8 @@
 
 .button-div {
   width: 66%;
-  margin-left: 17%;
-  justify-content: center;
+  margin-left: 4%;
+  justify-content: space-evenly;
 }
 
 .project-button {
@@ -97,7 +105,6 @@
   /* //box-shadow: 0 0 20px rgba(255, 166, 158, .4); */
   background-color: rgba(173, 216, 230, .7);
   border-radius: 10px;
-
 }
 
 .project-button:hover {
@@ -130,12 +137,11 @@ button:hover {
 
 .fade-exit{
   opacity: 1;
-
 }
 
 .fade-exit.fade-exit-active {
   opacity: 0; 
-  transition: opacity 500ms linear;
+  transition: opacity 0ms linear;
 }
 
 .fade-enter{
