@@ -23,16 +23,17 @@ export default class ProjectDisplay extends React.Component {
     textVisible: false,
     projects: [
       {
-        title: 'Even-Teams',
+        title: 'Even Teams',
         imgs: [ETScreen, ETIphone],
         liveSite: 'https://even-teams.now.sh/',
         frontendRepo: 'https://github.com/DustinHaefele/even-teams-client',
         BackendRepo: 'https://github.com/DustinHaefele/even-teams-server',
         description:
-          'Even Teams is a full-stack app to help you make the most even teams possible for any two team sport or game.'
+          'is a full-stack app to help you make the most even teams possible for any two team sport or game.  The idea came from my friends and I playing volleyball on wednesday nights.  We always hated deciding on teams, and we think close games are more exciting than blowouts.  If you feel the same way, this app is for you!',
+          stack: ['JavaScript', 'React', 'Express', 'Node', 'PostgreSQL', 'CSS3'],
       },
       {
-        title: 'Stay-Informed',
+        title: 'Stay Informed',
         imgs: [SIScreen, SIIphone],
         liveSite: 'stayinformed.now.sh',
         frontendRepo:
@@ -40,17 +41,19 @@ export default class ProjectDisplay extends React.Component {
         BackendRepo:
           'https://github.com/thinkful-ei-dragonfly/stay-informed-api',
         description:
-          'Stay Informed is an app designed to help users find information on their congressional representatives by address.'
+          'is an app designed to help users find information on their congressional representatives by searching thier address.  Our project team wanted an easy way to look up who their representatives are and who are the biggest donors to thier campaigns.  We also wanted to have their contact info and current news all in one place.  This is an app for anyone who feels the same.',
+          stack: ['JavaScript', 'React', 'Express', 'Node', 'PostgreSQL', 'SASS', 'Google Civic API', 'ProPublica API', 'OpenSecrets API', 'NewsAPI.org'],
       },
       {
-        title: 'Spaced-Repetition',
+        title: 'Spaced Repetition',
         imgs: [SRScreen, SRIphone],
         liveSite: 'https://spaced-repetition.dustinhaefele.now.sh/register',
         frontendRepo: 'https://github.com/DustinHaefele/spaced-repetition',
         BackendRepo:
           'https://github.com/thinkful-ei-dragonfly/spaced-repetition-api-dustin-michaelb',
         description:
-          'Spaced Repetition is a full-stack app that applies a spaced repition learning algorithm to help users learn vocabulary in a new language.'
+          'is a full-stack app that applies a spaced repition learning algorithm to help users learn vocabulary in a new language.  Currently it is an MVP with only ten words and one language loaded into the database.',
+        stack: ['JavaScript','React', 'Express', 'Node', 'PostgreSQL', 'CSS3']
       }
     ]
   };
@@ -87,7 +90,19 @@ export default class ProjectDisplay extends React.Component {
   }
 
 
+
   projectImage() {
+    const project = this.state.projects[this.state.projectId];
+
+    const firstStack = [];
+    const secondStack = [];
+
+    project.stack.forEach((tech, idx) => {
+    if(idx % 2 ===0)  firstStack.push(<li key={idx}>{tech}</li>)
+    else secondStack.push(<li key={idx}>{tech}</li>)
+    })
+    
+
     return (
     <>
     <div className="row img desk">
@@ -107,26 +122,49 @@ export default class ProjectDisplay extends React.Component {
     </TransitionGroup>
     </div>
     <div className='column project-info'>
-      <p>This is my descrition, lorem ipsum alpha beta pi gama do do do do do dodododododododo dod od od dod </p>
-      <p>This is my tech stack, lorem ipsum alpha beta pi gama do do do do do dodododododododo dod od od dod </p>
-    </div>
+      <div>
+        <h3>What is it?</h3>
+        <p >{project.description}</p>
+      </div>
+      <div>
+        <h3>Tech Stack</h3>
+        <div className='row'>
+          <ul>{firstStack}</ul>
+          <ul>{secondStack}</ul>
+        </div>
+       
+      </div>    
+      </div>
     </div>
     <div className='column icon'>
-    <FontAwesomeIcon
-      icon={faChevronRight}
-      className="project-icon"
-      onClick={() => this.setProjectId(1)}
-    /></div>
+      <FontAwesomeIcon
+        icon={faChevronRight}
+        className="project-icon"
+        onClick={() => this.setProjectId(1)}
+      />
+    </div>
   </div>
   
   <div className="row img mob">
   <div className="img-div">
     <img
-      src={this.state.projects[this.state.projectId].imgs[1]}
+      src={project.imgs[1]}
       alt="project screenshot"
       className="project-screenshot"
-      onClick={() => this.updateImg()}
     />
+  </div>
+  <div className='row'>
+      <div>
+        <h3>What is it?</h3>
+        <p className='project-description'><span className='title'>{project.title}</span> {project.description}</p>
+      </div>
+      <div>
+        <h3>Tech Stack</h3>
+        <div className='row  stack-display'>
+          <ul>{firstStack}</ul>
+          <ul>{secondStack}</ul>
+        </div>
+      </div>  
   </div>
   <div className='row'>
   <FontAwesomeIcon
@@ -167,11 +205,6 @@ export default class ProjectDisplay extends React.Component {
           >
             <button className="project-button">See Server Code</button>
           </a>
-        </div>
-        <div className="row">
-          <p className="project-description">
-            {this.state.projects[this.state.projectId].description}
-          </p>
         </div>
       </div>
     );

@@ -20,14 +20,6 @@
   height: inherit;
 }
 
-
-
-.project-title{
-  margin: 3px 0 3px 5px;
-  justify-content: flex-start;
-  font-weight: 400;
-}
-
 .project-icon {
   margin: 13% 30px 0;
   font-size: 10vh;
@@ -44,6 +36,12 @@
 }
 
 .project-screenshot-mobile {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+}
+
+.project-screenshot {
   width: auto;
   height: 100%;
   object-fit: contain;
@@ -73,6 +71,12 @@
   display: inline-block;
 }
 
+.img-div {
+  position: relative;
+  height: 80vh;
+  display: inline-block;
+}
+
 .img-div-desk{
   padding: 2vh 0 0;
   position: relative;
@@ -91,9 +95,8 @@
 }
 
 .button-div {
-  width: 66%;
-  margin-left: 4%;
-  justify-content: space-evenly;
+  width: 100%;
+  justify-content: center;
 }
 
 .project-button {
@@ -115,7 +118,7 @@
 } 
 
 .project-description {
-  margin-bottom: 8px;
+  margin:0 5px 8px 5px;
   font-size: 20px;
 }
 
@@ -133,6 +136,11 @@ button:hover {
 
 .mob {
   display: flex;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .fade-exit{
@@ -154,10 +162,29 @@ button:hover {
   transition: opacity 500ms linear;
 }
 
+ul{
+  padding: 0 0;
+  list-style: none;
+}
+
+.stack-display {
+  width: 80vw;
+}
+
 @media only screen and (min-width: 800px) {
   .project-icon {
     margin-top: 40%;
     font-size: 10vh;
+  }
+
+  .project-description {
+    margin: 0 0 5px 0;
+  }
+
+  .button-div {
+    width: 66%;
+    margin-left: 4%;
+    justify-content: space-evenly;
   }
 
   .mob{
