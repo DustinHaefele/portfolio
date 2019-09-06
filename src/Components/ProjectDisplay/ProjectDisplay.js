@@ -124,7 +124,7 @@ export default class ProjectDisplay extends React.Component {
     <div className='column project-info'>
       <div>
         <h3>What is it?</h3>
-        <p >{project.description}</p>
+        <p className='project-description'><span className='title'>{project.title}</span> {project.description}</p>
       </div>
       <div>
         <h3>Tech Stack</h3>
