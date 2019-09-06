@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald&display=swap');
 
-
 * {
   box-sizing: border-box;
   font-family: 'Open Sans Condensed', sans-serif;
@@ -17,55 +16,12 @@ body{
   text-align: center;
 }
 
-
-
-/* Hero */
-
-.hero {
-  min-height: 250px;
-  padding: 20px 0 20px 0;
-  /*background-color:rgba(255, 104, 107);/*#EE6C4D; */
-  background-color: rgba(52, 105, 86, .7);
-  border: 1px groove rgba(52, 105, 86,.5);
-  /* box-shadow: 0 5px 20px rgba(69, 71, 71, .7); */
-  box-shadow: 0 5px 20px rgba(69,52,105, .7); 
-  margin: 0 2%;
-}
-
-h1 {
-  font-size: 50px;
-  font-family: 'Oswald', sans-serif;
-  margin: 0.5em 0 0 0;
-}
-
-.subtitle {
-  font-size: 18px;
-  margin: 0 0 20px 0;
-}
-
-#sketch {
-  height: auto;
-  width: 50%;
-  border-radius: 20%;
-}
-
-.quote{
-  margin-top: 10px;
-  padding: 0 3px;
-}
-
-.quote p{
-  font-size: 16px;
-  font-family: 'Oswald', sans-serif;
-}
 /* Section General */
 section {
   min-height: 250px;
   margin: 6% 2%;
   padding: 4% 0 4% 0;
-  background-color: #ffffff;/* #E0FBFC; */
-  /* border: 1px groove rgba(165, 255, 214,.5);
-  box-shadow: 0 5px 20px rgba(165, 255, 214, .4); */
+  background-color: #ffffff;
   border: 1px groove rgba(52, 105, 86,.5);
   box-shadow: 0 5px 20px rgba(52, 105, 86, .4);
   
@@ -92,14 +48,12 @@ section:nth-of-type(even) {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  /* max-height: 800px; */
   align-content: center;
 }
 
 .column {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-content: space-around;
 }
 
@@ -114,16 +68,6 @@ section:nth-of-type(even) {
   justify-content: space-between;
 }
 
-/* Skills Section */
-
-.logo{
-  width: 50px; 
-  height: 50px;
-  margin: 10px 20px;
-}
-
-
-
 ._50 {
   width: 100%;
 }
@@ -136,25 +80,6 @@ section:nth-of-type(even) {
     margin: 0 0 0 0;
   }
 
-  header {
-    height: 70px;
-    font-size: 32px;
-  }
-
-  .nav-drop {
-    top: 70px;
-  }
-
-  .hero-row {
-    margin-top: 35px;
-  }
-
-  .logo{
-    margin: 25px 35px;
-  }
-
-  
-
   .section-title {
     margin: 8px 0 24px 0;
     font-size: 40px;
@@ -162,39 +87,10 @@ section:nth-of-type(even) {
     font-family: 'Oswald', sans-serif, cursive;
   }
 
-  .subtitle {
-    font-size: 32px;
-    margin: 0 0 0 0;
-  }
 
   ._50 {
     justify-content: center;
     width: 40%;
     margin: 0 0 15px 0;
   }
-
-  .hero-image {
-    /* display: inline-block; */
-    width: 40%;
-  }
-  
-  #sketch {
-    padding:45px 0 20px 0;
-    /* margin: 45px 0 20px 0; */
-    height: auto;
-    width: 300px;
-    border-radius: 20%;
-  }
-  
-  .quote{
-    margin-top: 10px;
-    padding: 0 3px;
-  }
-  
-  .quote p{
-    font-size: 30px;
-    font-family: 'Oswald', sans-serif;
-  }
-
-
 }

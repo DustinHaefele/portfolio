@@ -23,7 +23,6 @@ function App() {
         </div>
       </main>
       <footer>Built by Dustin Haefele</footer>
-
     </div>
   );
 }

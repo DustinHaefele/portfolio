@@ -1,0 +1,70 @@
+/* Hero */
+
+.hero {
+  min-height: 250px;
+  padding: 20px 0 20px 0;
+  background-color: rgba(52, 105, 86, .7);
+  border: 1px groove rgba(52, 105, 86,.5);
+  box-shadow: 0 5px 20px rgba(69,52,105, .7); 
+  margin: 0 2%;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: 'Oswald', sans-serif;
+  margin: 0.5em 0 0 0;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin: 0 0 20px 0;
+}
+
+#sketch {
+  height: auto;
+  width: 50%;
+  border-radius: 20%;
+}
+
+.quote{
+  margin-top: 10px;
+  padding: 0 3px;
+}
+
+.quote p{
+  font-size: 16px;
+  font-family: 'Oswald', sans-serif;
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero-image {
+    width: 40%;
+  }
+
+
+  .hero-row {
+    margin-top: 35px;
+  }
+  
+  #sketch {
+    padding:45px 0 20px 0;
+    height: auto;
+    width: 300px;
+    border-radius: 20%;
+  }
+  
+  .subtitle {
+    font-size: 32px;
+    margin: 0 0 0 0;
+  }
+
+  .quote{
+    margin-top: 10px;
+    padding: 0 3px;
+  }
+  
+  .quote p{
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+  }
+}

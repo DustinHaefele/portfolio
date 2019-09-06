@@ -1,8 +1,9 @@
 import React from 'react';
+import './Hero.css';
 import Pup from '../../img/site-sketch.jpg';
 
 
-import './Hero.css';
+
 
 export default class Hero extends React.Component {
   render() {
