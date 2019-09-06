@@ -22,7 +22,7 @@ header{
   right: 0;
   left: 0;
   z-index: 19;
-  height: 800px;
+  height: 100vh;
 }
 
 .nav-list {
@@ -67,7 +67,7 @@ header{
   cursor: pointer;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
   .nav-header {
     font-size: 36px;
     margin: 5px 10px;

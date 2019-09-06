@@ -36,7 +36,7 @@ h1 {
   font-family: 'Oswald', sans-serif;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
   .hero-image {
     width: 40%;
   }

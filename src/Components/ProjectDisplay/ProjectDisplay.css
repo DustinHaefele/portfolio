@@ -16,16 +16,11 @@
   font-size: 20px;
 }
 
-
-
-.img-div {
-  position: relative;
-  display: inline-block;
+.icon {
+  height: inherit;
 }
 
-.img-div:hover {
-  cursor: pointer;
-}
+
 
 .project-title{
   margin: 3px 0 3px 5px;
@@ -34,7 +29,7 @@
 }
 
 .project-icon {
-  margin: 3vh 30px;
+  margin: 13% 30px 0;
   font-size: 10vh;
 }
 
@@ -42,10 +37,49 @@
   cursor: pointer;
 }
 
-.project-screenshot {
-  width: auto;
-  height: 80vh;
+.project-screenshot-desk {
+  width: 100%;
+  height: auto;
   object-fit: contain;
+}
+
+.project-screenshot-mobile {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+}
+
+.display {
+  width: 70vw;
+}
+
+.prod_50 {
+  justify-content: center;
+  margin: 0 0 15px 0;
+  width: 60%;
+  object-fit: contain;
+}
+
+.img-div-mobile {
+  position: relative;
+  width: auto;
+  height: 60vh;
+  display: inline-block;
+}
+
+.img-div-desk{
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.img-div:hover {
+  cursor: pointer;
+}
+
+.project-info {
+  width: 30%;
 }
 
 .button-div {
@@ -78,7 +112,6 @@
   font-size: 20px;
 }
 
-
 button:hover {
   cursor: pointer;
 }
@@ -95,9 +128,29 @@ button:hover {
   display: flex;
 }
 
+.fade-exit{
+  opacity: 1;
+
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0; 
+  transition: opacity 500ms linear;
+}
+
+.fade-enter{
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1; 
+  transition: opacity 500ms linear;
+}
+
 @media only screen and (min-width: 800px) {
   .project-icon {
-    margin-top: 35vh;
+    margin-top: 40%;
     font-size: 10vh;
   }
 

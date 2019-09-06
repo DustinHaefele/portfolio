@@ -10,6 +10,7 @@ import SIScreen from '../../img/SI-desktop.png';
 import SIIphone from '../../img/SI-iphone.png';
 import SRScreen from '../../img/SR-desktop.png';
 import SRIphone from '../../img/SR-iphone.png';
+import {CSSTransition, TransitionGroup} from 'react-transition-group';
 import './ProjectDisplay.css';
 
 export default class ProjectDisplay extends React.Component {
@@ -98,41 +99,72 @@ export default class ProjectDisplay extends React.Component {
     return (
     <>
     <div className="row img desk">
+    <div className='column icon'>
     <FontAwesomeIcon
       icon={faChevronLeft}
       className="project-icon"
       onClick={() => this.setProjectId(-1)}
     />
-    <div className="_80">
-    <div
-      className="img-div"
-      onMouseEnter={() => this.showText()}
-      onMouseLeave={() => this.hideText()}
-    >
-      <img
-        src={
-          this.state.projects[this.state.projectId].imgs[
-            this.state.imgIdx
-          ]
-        }
-        alt="project screenshot"
-        className="project-screenshot"
-        onClick={() => this.updateImg()}
-      />
+    </div>
+    <div className='row display between'>
+    <div className="prod_50">
+      {this.state.imgIdx === 0 ? <TransitionGroup><CSSTransition key={this.state.imgIdx} timeout={500} classNames='fade'><div
+        className="img-div-desk"
+        onMouseEnter={() => this.showText()}
+        onMouseLeave={() => this.hideText()}
+      >
+        <img
+          src={
+            this.state.projects[this.state.projectId].imgs[
+              this.state.imgIdx
+            ]
+          }
+          alt="project screenshot"
+          className="project-screenshot-desk"
+          onClick={() => this.updateImg()}
+        />
 
-      {this.state.textVisible && this.state.imgIdx === 0 && (
-        <h2 className="text-over desktop">Click to see mobile view</h2>
-      )}
-      {this.state.textVisible && this.state.imgIdx === 1 && (
-        <h2 className="text-over mobile">Click to see desktop view</h2>
-      )}
+        {this.state.textVisible && this.state.imgIdx === 0 && (
+          <h2 className="text-over desktop">Click to see mobile view</h2>
+        )}
+        {this.state.textVisible && this.state.imgIdx === 1 && (
+          <h2 className="text-over mobile">Click to see desktop view</h2>
+        )}
+      </div> </CSSTransition></TransitionGroup>: <TransitionGroup><CSSTransition key={this.state.imgIdx} timeout={500} classNames='fade'><div
+        className="img-div-mobile"
+        onMouseEnter={() => this.showText()}
+        onMouseLeave={() => this.hideText()}
+      >
+        <img
+          src={
+            this.state.projects[this.state.projectId].imgs[
+              this.state.imgIdx
+            ]
+          }
+          alt="project screenshot"
+          className="project-screenshot-mobile"
+          onClick={() => this.updateImg()}
+        />
+
+        {this.state.textVisible && this.state.imgIdx === 0 && (
+          <h2 className="text-over desktop">Click to see mobile view</h2>
+        )}
+        {this.state.textVisible && this.state.imgIdx === 1 && (
+          <h2 className="text-over mobile">Click to see desktop view</h2>
+        )}
+      </div></CSSTransition></TransitionGroup>}
+    </div>
+    <div className='column project-info'>
+      <p>This is my descrition, lorem ipsum alpha beta pi gama do do do do do dodododododododo dod od od dod </p>
+      <p>This is my tech stack, lorem ipsum alpha beta pi gama do do do do do dodododododododo dod od od dod </p>
     </div>
     </div>
+    <div className='column icon'>
     <FontAwesomeIcon
       icon={faChevronRight}
       className="project-icon"
       onClick={() => this.setProjectId(1)}
-    />
+    /></div>
   </div>
   
   <div className="row img mob">
