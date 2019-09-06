@@ -27,7 +27,7 @@ export default class ProjectDisplay extends React.Component {
         imgs: [ETScreen, ETIphone],
         liveSite: 'https://even-teams.now.sh/',
         frontendRepo: 'https://github.com/DustinHaefele/even-teams-client',
-        BackendRepo: 'https://github.com/DustinHaefele/even-teams-server',
+        backendRepo: 'https://github.com/DustinHaefele/even-teams-server',
         description:
           'is a full-stack app to help you make the most even teams possible for any two team sport or game.  The idea came from my friends and I playing volleyball on wednesday nights.  We always hated deciding on teams, and we think close games are more exciting than blowouts.  If you feel the same way, this app is for you!',
           stack: ['JavaScript', 'React', 'Express', 'Node', 'PostgreSQL', 'CSS3'],
@@ -35,10 +35,10 @@ export default class ProjectDisplay extends React.Component {
       {
         title: 'Stay Informed',
         imgs: [SIScreen, SIIphone],
-        liveSite: 'stayinformed.now.sh',
+        liveSite: 'https://stayinformed.now.sh',
         frontendRepo:
           'https://github.com/thinkful-ei-dragonfly/stay-informed-client',
-        BackendRepo:
+        backendRepo:
           'https://github.com/thinkful-ei-dragonfly/stay-informed-api',
         description:
           'is an app designed to help users find information on their congressional representatives by searching thier address.  Our project team wanted an easy way to look up who their representatives are and who are the biggest donors to thier campaigns.  We also wanted to have their contact info and current news all in one place.  This is an app for anyone who feels the same.',
@@ -47,9 +47,9 @@ export default class ProjectDisplay extends React.Component {
       {
         title: 'Spaced Repetition',
         imgs: [SRScreen, SRIphone],
-        liveSite: 'https://spaced-repetition.dustinhaefele.now.sh/register',
+        liveSite: 'https://spaced-repetition.dustinhaefele.now.sh',
         frontendRepo: 'https://github.com/DustinHaefele/spaced-repetition',
-        BackendRepo:
+        backendRepo:
           'https://github.com/thinkful-ei-dragonfly/spaced-repetition-api-dustin-michaelb',
         description:
           'is a full-stack app that applies a spaced repition learning algorithm to help users learn vocabulary in a new language.  Currently it is an MVP with only ten words and one language loaded into the database.',
@@ -132,7 +132,6 @@ export default class ProjectDisplay extends React.Component {
           <ul>{firstStack}</ul>
           <ul>{secondStack}</ul>
         </div>
-       
       </div>    
       </div>
     </div>
