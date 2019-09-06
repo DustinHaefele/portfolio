@@ -25,7 +25,7 @@ export default class ProjectDisplay extends React.Component {
       {
         title: 'Even Teams',
         imgs: [ETScreen, ETIphone],
-        liveSite: 'https://even-teams.now.sh/',
+        liveSite: 'https://eventeams.now.sh/',
         frontendRepo: 'https://github.com/DustinHaefele/even-teams-client',
         backendRepo: 'https://github.com/DustinHaefele/even-teams-server',
         description:
