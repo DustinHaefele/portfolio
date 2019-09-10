@@ -1,5 +1,5 @@
 {
-  "name": "portfolio-react",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,7 +21,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "now ./build",
-    "postdeploy": "now alias https://portfolio-react.dustinhaefele.now.sh www.dustinhaefele.com"
+    "postdeploy": "now alias https://portfolio.dustinhaefele.now.sh www.dustinhaefele.com"
   },
   "eslintConfig": {
     "extends": "react-app"

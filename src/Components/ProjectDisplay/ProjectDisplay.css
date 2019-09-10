@@ -86,12 +86,21 @@
   display: inline-block;
 }
 
-.img-div:hover {
+.img-div-desk:hover {
+  cursor: pointer;
+}
+
+.img-div-mobile:hover {
   cursor: pointer;
 }
 
 .project-info {
-  width: 30%;
+  width: 50%;
+  margin-left: 25%
+}
+
+.arrows {
+  width: 100%;
 }
 
 .button-div {
@@ -100,7 +109,7 @@
 }
 
 .project-button {
-  margin: 8px;
+  margin: 12px;
   font-size: 20px;
   font-weight: bold;
   padding: 10px 20px;
@@ -118,7 +127,8 @@
 } 
 
 .project-description {
-  margin:0 5px 8px 5px;
+  width: 80%;
+  margin:0 10% 8px;
   font-size: 20px;
 }
 
@@ -135,7 +145,7 @@ button:hover {
 }
 
 .mob {
-  display: flex;
+  display: block;
 }
 
 .title {
@@ -171,18 +181,35 @@ ul{
   width: 80vw;
 }
 
-@media only screen and (min-width: 800px) {
+.tech-list {
+  font-size: 20px;
+    font-weight: bold;
+  margin: 0 10%;
+}
+
+@media only screen and (min-width: 1025px) {
   .project-icon {
     margin-top: 40%;
     font-size: 10vh;
   }
 
   .project-description {
-    margin: 0 0 5px 0;
+    margin: 0 0 10px 20%;
+    width: 60%;
+    min-height: 150px;
+  }
+
+  .tech-list {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .project-subtitle{
+    font-size: 24px;
   }
 
   .button-div {
-    width: 66%;
+    width: 30%;
     margin-left: 4%;
     justify-content: space-evenly;
   }
@@ -193,5 +220,11 @@ ul{
 
   .desk{
     display: flex
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .button-div {
+    width: 30%;
   }
 }
