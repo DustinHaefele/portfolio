@@ -21,6 +21,8 @@ export default function Contact() {
             <a
               href="http://www.creaturecomfortsbeer.com/"
               className="contact-link"
+              target='_blank'
+              rel="noopener noreferrer"
             >
               <FontAwesomeIcon
                 icon={faMapMarked}
@@ -30,7 +32,8 @@ export default function Contact() {
             </a>
           </li>
           <li className="row center">
-            <a href="emailto:Dustin.Haefele@gmail.com" className="contact-link">
+            <a href="mailto:Dustin.Haefele@gmail.com" className="contact-link" target='_blank'
+              rel="noopener noreferrer">
             <FontAwesomeIcon
               icon={faPaperPlane}
               className="contact-logo"
@@ -44,10 +47,13 @@ export default function Contact() {
         <a
           href="https://www.linkedin.com/in/dustin-haefele-1921b474/"
           className="contact-link"
+          target='_blank'
+          rel="noopener noreferrer"
         >
           <img src={LinkedIn} alt="linkdin-logo" className="link-logo logo" />
         </a>
-        <a href="https://github.com/DustinHaefele" className="contact-link">
+        <a href="https://github.com/DustinHaefele" className="contact-link" target='_blank'
+              rel="noopener noreferrer">
           <img src={Github} alt="github-logo" className="git-logo logo" />
         </a>
       </div>
