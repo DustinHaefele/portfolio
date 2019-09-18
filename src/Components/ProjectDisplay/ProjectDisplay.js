@@ -4,13 +4,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faChevronRight,
   faChevronLeft
-} from '@fortawesome/free-solid-svg-icons';
-import ETScreen from '../../img/ET-desk.png';
-import ETIphone from '../../img/ET-iphone.png';
-import SIScreen from '../../img/SI-desk.png';
-import SIIphone from '../../img/SI-iphone.png';
-import SRScreen from '../../img/SR-desk.png';
-import SRIphone from '../../img/SR-iphone.png';
+} from '@fortawesome/free-solid-svg-icons'; 
+import ETScreen from '../../img/tinified/ET-desk.png';
+import ETIphone from '../../img/tinified/ET-iphone.png';
+import SIScreen from '../../img/tinified/SI-desk.png';
+import SIIphone from '../../img/tinified/SI-iphone.png';
+import SRScreen from '../../img/tinified/SR-desk.png';
+import SRIphone from '../../img/tinified/SR-iphone.png';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import ProjectButtons from '../ProjectButtons/ProjectButtons';
 import Images from '../Images/Images';
