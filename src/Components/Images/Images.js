@@ -1,4 +1,4 @@
-import './Images.css'
+import './Images.css';
 import React from 'react';
 import ETScreen from '../../img/tinified/ET-desk.png';
 import ETIphone from '../../img/tinified/ET-iphone.png';
@@ -8,7 +8,6 @@ import SRScreen from '../../img/tinified/SR-desk.png';
 import SRIphone from '../../img/tinified/SR-iphone.png';
 
 export default class Images extends React.Component {
-  
   state = {
     textVisible: false,
     projects: [
@@ -57,7 +56,7 @@ export default class Images extends React.Component {
         stack: ['JavaScript', 'React', 'Express', 'Node', 'PostgreSQL', 'CSS3']
       }
     ]
-  }
+  };
 
   showText() {
     this.setState({
@@ -81,29 +80,30 @@ export default class Images extends React.Component {
       });
     }
   }
-  
+
   render() {
-
-    const classy1 = this.props.imgIdx === 0 ? "img-div-desk" : "img-div-mobile"
-    const classy2 = this.props.imgIdx === 0 ? "project-screenshot-desk" : "project-screenshot-mobile"
-
+    const classy1 = this.props.imgIdx === 0 ? 'img-div-desk' : 'img-div-mobile';
+    const classy2 =
+      this.props.imgIdx === 0
+        ? 'project-screenshot-desk'
+        : 'project-screenshot-mobile';
 
     return (
-    <div
+      <div
         className={classy1}
         onMouseEnter={() => this.showText()}
         onMouseLeave={() => this.hideText()}
       >
-        <img
-          src={
-            this.state.projects[this.props.projectId].imgs[
-              this.props.imgIdx
-            ]
-          }
-          alt="project screenshot"
-          className={classy2}
-          onClick={this.props.updateImg}
-        />
+            <img
+              src={
+                this.state.projects[this.props.projectId].imgs[
+                  this.props.imgIdx
+                ]
+              }
+              alt="project screenshot"
+              className={classy2}
+              onClick={this.props.updateImg}
+            />\
 
         {this.state.textVisible && this.props.imgIdx === 0 && (
           <h2 className="text-over desktop">Click to see mobile view</h2>
@@ -111,6 +111,7 @@ export default class Images extends React.Component {
         {this.state.textVisible && this.props.imgIdx === 1 && (
           <h2 className="text-over mobile">Click to see desktop view</h2>
         )}
-      </div> 
-    )}
+      </div>
+    );
+  }
 }
