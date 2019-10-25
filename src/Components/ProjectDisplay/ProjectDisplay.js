@@ -150,6 +150,7 @@ export default class ProjectDisplay extends React.Component {
             />
           </div>
         </div>
+        
         <div className='mob'>
         <div className="row img">
           <div className="img-div">
