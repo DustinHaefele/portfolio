@@ -5,7 +5,7 @@ export default class ProjectButtons extends React.Component {
   return (
     <div className="column button-div">
           <a
-            href={this.props.projects[this.props.projectId].liveSite}
+            href={this.props.liveSite}
             className="project-live"
             target='_blank'
             rel="noopener noreferrer"
@@ -13,7 +13,7 @@ export default class ProjectButtons extends React.Component {
             <button className="project-button">Live App</button>
           </a>
           <a
-            href={this.props.projects[this.props.projectId].frontendRepo}
+            href={this.props.frontendRepo}
             className="project-code"
             target='_blank'
             rel="noopener noreferrer"
@@ -21,7 +21,7 @@ export default class ProjectButtons extends React.Component {
             <button className="project-button">See Client Code</button>
           </a>
           <a
-            href={this.props.projects[this.props.projectId].backendRepo}
+            href={this.props.backendRepo}
             className="project-code"
             target='_blank'
             rel="noopener noreferrer"
