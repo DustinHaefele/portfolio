@@ -127,7 +127,6 @@ export default class ProjectDisplay extends React.Component {
                   classNames="fade"
                 >
                   <Images
-                    projects={this.state.projects}
                     projectId={this.state.projectId}
                     updateImg={() => this.updateImg()}
                     imgIdx={this.state.imgIdx}
@@ -138,6 +137,9 @@ export default class ProjectDisplay extends React.Component {
             <ProjectButtons
               projects={this.state.projects}
               projectId={this.state.projectId}
+              liveSite={this.state.projects[this.state.projectId].liveSite}
+              frontendRepo={this.state.projects[this.state.projectId].frontendRepo}
+              backendRepo={this.state.projects[this.state.projectId].backendRepo}
             />
           </div>
           <div className="column icon">
@@ -148,6 +150,7 @@ export default class ProjectDisplay extends React.Component {
             />
           </div>
         </div>
+        
         <div className='mob'>
         <div className="row img">
           <div className="img-div">
