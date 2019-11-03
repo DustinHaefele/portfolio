@@ -103,7 +103,7 @@ export default class Images extends React.Component {
               alt="project screenshot"
               className={classy2}
               onClick={this.props.updateImg}
-            />\
+            />
 
         {this.state.textVisible && this.props.imgIdx === 0 && (
           <h2 className="text-over desktop">Click to see mobile view</h2>
