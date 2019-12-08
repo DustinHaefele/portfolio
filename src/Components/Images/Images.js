@@ -90,6 +90,10 @@ export default class Images extends React.Component {
         ? 'project-screenshot-desk'
         : 'project-screenshot-mobile';
 
+    const url = this.state.projects[this.props.projectId].imgs[
+      this.props.imgIdx
+    ];
+
     return (
       <div
         className={classy1}
@@ -99,13 +103,13 @@ export default class Images extends React.Component {
         <ImageLoader
           placeholder="../../../2705-image-loading.gif"
           image={url}
-          renderComponent={({ src }) => <img src={src} alt={title} />}
+          renderComponent={({ src }) => <img src={src} alt="project screenshot" className={classy2} onClick={this.props.updateImg}/>}
           renderLoading={() => <ImgLoader />}
           renderError={() => (
-            <text>Failed to load your gif, please try again </text>
+            <text>Failed to load the image</text>
           )}
         />
-            <img
+            {/* <img
               src={
                 this.state.projects[this.props.projectId].imgs[
                   this.props.imgIdx
@@ -114,7 +118,7 @@ export default class Images extends React.Component {
               alt="project screenshot"
               className={classy2}
               onClick={this.props.updateImg}
-            />
+            /> */}
 
         {this.state.textVisible && this.props.imgIdx === 0 && (
           <h2 className="text-over desktop">Click to see mobile view</h2>
