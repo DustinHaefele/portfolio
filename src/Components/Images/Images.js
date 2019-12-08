@@ -1,5 +1,7 @@
 import './Images.css';
 import React from 'react';
+import ImgLoader from '../ImgLoader/ImgLoader';
+import ImageLoader from 'rc-image-loader';
 import ETScreen from '../../img/tinified/ET-desk.png';
 import ETIphone from '../../img/tinified/ET-iphone.png';
 import SIScreen from '../../img/tinified/SI-desk.png';
@@ -94,6 +96,15 @@ export default class Images extends React.Component {
         onMouseEnter={() => this.showText()}
         onMouseLeave={() => this.hideText()}
       >
+        <ImageLoader
+          placeholder="../../../2705-image-loading.gif"
+          image={url}
+          renderComponent={({ src }) => <img src={src} alt={title} />}
+          renderLoading={() => <ImgLoader />}
+          renderError={() => (
+            <text>Failed to load your gif, please try again </text>
+          )}
+        />
             <img
               src={
                 this.state.projects[this.props.projectId].imgs[
