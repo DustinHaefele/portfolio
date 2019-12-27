@@ -28,10 +28,10 @@ export default function AboutMe() {
           <br />
           When I saw a chance to make work more than just a paycheck I had to do
           something about it. I loved the programming I was doing so much that I
-          decided to make a leap and enroll in a Fullstack Development program
-          through Thinkful where I worked on a developmont team on multiple
+          decided to take a leap and enroll in a Fullstack Development program
+          through Thinkful where I worked on a development team on multiple
           projects to build Full-Stack web apps with the guidance of industry
-          professionals. I am currently travelling across South America working
+          professionals. I am currently traveling across South America working
           on open source projects, personal projects and seeking a full-time
           development position to use the skills I already have and continue to
           learn so I can do my part in making the world a little better place to
