@@ -9,10 +9,9 @@ export default function AboutMe() {
       </div>
       <div className="row">
         <p id="about-me">
-          Hey, I’m Dustin, an aspiring web developer currently based in Athens,
-          Georgia. I love coming up with efficient solutions to complex
-          problems, traveling the world, good puns, good beer, and Dvorak
-          keyboards. <br />
+          Hey, I’m Dustin, a web developer currently based in Athens, Georgia. I
+          love coming up with efficient solutions to complex problems, traveling
+          the world, good puns, good beer, and Dvorak keyboards. <br />
           <br />
           In my first life, I graduated from the University of Nebraska with a
           BS in Chemical Engineering and used it to make manufacturing plants
@@ -31,11 +30,11 @@ export default function AboutMe() {
           decided to take a leap and enroll in a Fullstack Development program
           through Thinkful where I worked on a development team on multiple
           projects to build Full-Stack web apps with the guidance of industry
-          professionals. I am currently traveling across South America working
-          on open source projects, personal projects and seeking a full-time
-          development position to use the skills I already have and continue to
-          learn so I can do my part in making the world a little better place to
-          live in one application at a time.
+          professionals. I just finished traveling across South America and have
+          been working on open source projects, personal projects and seeking a
+          full-time development position to use the skills I already have and
+          continue to learn so I can do my part in making the world a little
+          better place to live in one application at a time.
         </p>
       </div>
     </section>
