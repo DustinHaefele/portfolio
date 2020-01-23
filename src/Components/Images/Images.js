@@ -14,16 +14,6 @@ export default class Images extends React.Component {
     textVisible: false,
     projects: [
       {
-        title: 'Even Teams',
-        imgs: [ETScreen, ETIphone],
-        liveSite: 'https://eventeams.now.sh/',
-        frontendRepo: 'https://github.com/DustinHaefele/even-teams-client',
-        backendRepo: 'https://github.com/DustinHaefele/even-teams-server',
-        description:
-          'is a full-stack app to help you make the most even teams possible for any two team sport or game.  The idea came from my friends and I playing volleyball on wednesday nights.  We always hated deciding on teams, and we think close games are more exciting than blowouts.  If you feel the same way, this app is for you!',
-        stack: ['JavaScript', 'React', 'Express', 'Node', 'PostgreSQL', 'CSS3']
-      },
-      {
         title: 'Stay Informed',
         imgs: [SIScreen, SIIphone],
         liveSite: 'https://stayinformed.now.sh',
@@ -46,6 +36,17 @@ export default class Images extends React.Component {
           'NewsAPI.org'
         ]
       },
+      {
+        title: 'Even Teams',
+        imgs: [ETScreen, ETIphone],
+        liveSite: 'https://eventeams.now.sh/',
+        frontendRepo: 'https://github.com/DustinHaefele/even-teams-client',
+        backendRepo: 'https://github.com/DustinHaefele/even-teams-server',
+        description:
+          'is a full-stack app to help you make the most even teams possible for any two team sport or game.  The idea came from my friends and I playing volleyball on wednesday nights.  We always hated deciding on teams, and we think close games are more exciting than blowouts.  If you feel the same way, this app is for you!',
+        stack: ['JavaScript', 'React', 'Express', 'Node', 'PostgreSQL', 'CSS3']
+      },
+      
       {
         title: 'Spaced Repetition',
         imgs: [SRScreen, SRIphone],
